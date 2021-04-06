@@ -1,0 +1,75 @@
+<!DOCTYPE htnl>
+
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/Side.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrvatska</title>
+</head>
+
+<body>
+    <div class="header" id="rcorners2">
+        <div class="row">
+            <div class="column sideR">
+                <img src="../MEDIA/logo.png" style="width:50px;height:50px">
+
+            </div>
+
+            <div class="column middle">
+                <h1>Hrvatska</h1>
+            </div>
+
+            <div class="column sideL">
+
+
+                <button class="dropbtn" onclick="myFunction(); myFunction2(this);">
+
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+
+
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        //to trenutno ne dela sinko trazi hrgija da ti pomogne
+       /* window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+
+                }
+            }
+        }*/
+
+        function myFunction2(x) {
+            x.classList.toggle("change");
+        }
+
+    </script>
+
+</body>
+
+</html>

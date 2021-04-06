@@ -1,15 +1,17 @@
-﻿/*osnovni layout*/
+  
+/*osnovni layout*/
 /* Create three unequal columns that floats next to each other */
 * {
     box-sizing: border-box;
+
 }
 /*kao neki header nemoj me ubi leo*/
 .header {
     position: fixed;
     margin: 0;
-    width: 100%;
+    width:100%;
+    
 }
-
 body {
     margin: 0;
 }
@@ -17,16 +19,19 @@ body {
 .column {
     float: left;
     padding: 10px;
+    
 }
 
     /* lijeva column */
     .column.sideR {
         width: 15%;
+        
     }
     /* Desna  column */
     .column.sideL {
         width: 15%;
         text-align: right;
+        
     }
 
 
@@ -36,6 +41,7 @@ body {
         text-align: center;
         text-transform: uppercase;
         font-size: x-large;
+        
     }
 
 /* Clear floats after the columns */
@@ -43,12 +49,14 @@ body {
     content: "";
     display: table;
     clear: both;
+   
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column.side, .column.middle {
         width: 100%;
+        
     }
 }
 
@@ -104,6 +112,7 @@ body {
 .container {
     display: inline-block;
     cursor: pointer;
+    
 }
 
 .bar1, .bar2, .bar3 {
