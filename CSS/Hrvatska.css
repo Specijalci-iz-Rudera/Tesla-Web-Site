@@ -6,12 +6,55 @@
 /*kao neki header nemoj me ubi leo*/
 .header {
     position: fixed;
+    top:0px;
     margin: 0;
     width: 100%;
+    background-color: white;
 }
 
 body {
     margin: 0;
+    background-image: url("../MEDIA/Hrvatska/onoveliko.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*CSS za glavni sadrzaj(slike i tekst)*/
+.Main {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+    background-color: white;
+    width: 80%;
+    height:auto;
+    padding:1%;
+}
+/*Div za desno*/
+.rightimg {
+    text-align: right;
+    display:inline-block;
+}
+/*Div za lijevo*/
+.leftimg {
+    display: inline-block;
+}
+/*Margine lijevog teksta*/
+p.left {
+    margin-left:51%;
+}
+/*Margine desnog teksta*/
+p.right {
+    margin-right:51%;
+}
+/*Pozicije slika*/
+.leftimg img {
+    float: left;
+}
+
+.rightimg img {
+    float:right;
 }
 
 .column {
@@ -128,10 +171,3 @@ body {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-
-/*bordel */
-
-#rcorners2 {
-    border: 2px solid green;
-    border-radius: 8px;
-}

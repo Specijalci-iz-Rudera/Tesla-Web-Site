@@ -1,0 +1,95 @@
+<!DOCTYPE htnl>
+
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/Hrvatska.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrvatska</title>
+</head>
+
+<body>
+    <div class="header" id="rcorners2">
+        <div class="row">
+            <div class="column sideR">
+                <img src="../MEDIA/logo.png" style="width:50px;height:50px">
+
+            </div>
+
+            <div class="column middle">
+                <h1>Hrvatska</h1>
+            </div>
+
+            <div class="column sideL">
+
+
+                <button class="dropbtn" onclick="myFunction(); myFunction2(this);">
+
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+
+
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!--Div koji obuhvaca slike i tekst na sredini -->
+    <div class="Main">
+        <!--Div za 1. sliku i tekst na lijevoj strani -->
+        <div class="leftimg">
+            <h2>Placeholder</h2>
+            <img src="../MEDIA/Hrvatska/brac.jpg" style="width:50%;height:50%;">
+            <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
+        </div>
+        <!--Div za sliku i tekst na desnoj strani  -->
+        <div class="rightimg">
+            <h2>Placeholder</h2>
+            <img src="../MEDIA/Hrvatska/Dubrovnik.jpg" style="width: 50%; height: 50%;">
+            <p class="right">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
+        </div>
+        <!--Div za 2. sliku i tekst na lijevoj strani -->
+        <div class="leftimg">
+            <h2>Placeholder</h2>
+            <img src="../MEDIA/Hrvatska/plitvice.jpeg" style="width: 50%; height: 50%;">
+            <p class="left">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
+        </div>
+    </div>
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        //to trenutno ne dela sinko trazi hrgija da ti pomogne
+        /* window.onclick = function (e) {
+             if (!e.target.matches('.dropbtn')) {
+                 var myDropdown = document.getElementById("myDropdown");
+                 if (myDropdown.classList.contains('show')) {
+                     myDropdown.classList.remove('show');
+
+                 }
+             }
+         }*/
+
+        function myFunction2(x) {
+            x.classList.toggle("change");
+        }
+
+    </script>
+
+</body>
+
+</html>
