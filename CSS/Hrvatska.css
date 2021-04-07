@@ -22,45 +22,84 @@ body {
 }
 /*CSS za glavni sadrzaj(slike i tekst)*/
 .Main {
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    position: relative;
+    top:200px;
+    left:10%;
     z-index: -1;
-    background-color: white;
     width: 80%;
     height:auto;
-    padding:1%;
 }
 /*Div za desno*/
 .rightimg {
     text-align: right;
-    display:inline-block;
+    display: inline-block;
+    background-color: white;
+    padding-bottom: 1%;
+    border-radius: 10px;
 }
 /*Div za lijevo*/
 .leftimg {
     display: inline-block;
+    background-color: lightblue;
+    padding-bottom: 1%;
+    border-radius: 10px;
 }
 /*Margine lijevog teksta*/
 p.left {
-    margin-left:51%;
+    margin-left:52%;
 }
 /*Margine desnog teksta*/
 p.right {
-    margin-right:51%;
+    margin-right:52%;
 }
 /*Pozicije slika*/
 .leftimg img {
     float: left;
+    margin-left:1%;
 }
 
 .rightimg img {
     float:right;
+    margin-right:1%;
 }
 
-.column {
-    float: left;
-    padding: 10px;
+.leftimg h2 {
+    margin-left: 1%;
 }
+
+.rightimg h2 {
+    margin-right: 1%;
+}
+/*Div podnozja*/
+.Footer {
+    background-color:sandybrown;
+    position:relative;
+    top:200px;
+}
+/*Recenzija text*/
+ul.Recenzije {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Recenzije li {
+        float: left;
+        width: 33%;
+ }
+
+.Recenzije li p {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+/*End Leo*/
+    .column {
+        float: left;
+        padding: 1%;
+    }
 
     /* lijeva column */
     .column.sideR {
