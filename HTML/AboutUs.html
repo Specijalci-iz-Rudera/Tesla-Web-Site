@@ -25,25 +25,33 @@
             <div class="column1 sideL">
 
 
-                <button class="dropbtn" onclick="myFunction(); myFunction2(this);">
+                <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu(); ">
+
 
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
 
-                    <i class="fa fa-caret-down"></i>
+                    <!--<i class="fa fa-caret-down"></i>-->
                 </button>
 
 
 
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
+
+
 
             </div>
         </div>
+    </div>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+        <a></br></a>
+        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="../html/MainPage.html" class="w3-bar-item w3-button">Tesla Travels </a>
+        <a href="Hrvatska.html" class="w3-bar-item w3-button">Hrvatska</a>
+        <a href="Srbija.html" class="w3-bar-item w3-button">Srbija</a>
+        <a href="Grčka.html" class="w3-bar-item w3-button">Grčka</a>
+       
+
     </div>
 
     <div class="about-section">
@@ -130,7 +138,7 @@
     </div>
 
     <footer class="w3-center w3-black w3-padding-64">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Na vrh</a>
+        <button class="w3-button w3-light-grey" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-arrow-up w3-margin-right"></i>Na vrh </button>
         <div class="w3-xlarge w3-section">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
             <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -143,27 +151,29 @@
     </footer>
 
     <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+
+
+
+        //skripta za menu
+        function openRightMenu() {
+            document.getElementById("rightMenu").style.display = "block";
+            document.getElementById("rightMenu").style.width = "15%";
         }
 
-        // Close the dropdown if the user clicks outside of it
-        //to trenutno ne dela sinko trazi hrgija da ti pomogne
-        /* window.onclick = function (e) {
-             if (!e.target.matches('.dropbtn')) {
-                 var myDropdown = document.getElementById("myDropdown");
-                 if (myDropdown.classList.contains('show')) {
-                     myDropdown.classList.remove('show');
-
-                 }
-             }
-         }*/
-
-        function myFunction2(x) {
-            x.classList.toggle("change");
+        function closeRightMenu() {
+            document.getElementById("rightMenu").style.display = "none";
         }
+
+
+        // skripta za ici gore
+
+
+
+        function topFunction() {
+            document.body.scrollTop = 0;  // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
 
     </script>
 

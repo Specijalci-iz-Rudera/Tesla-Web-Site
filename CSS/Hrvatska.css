@@ -124,6 +124,7 @@ ul.Recenzije {
     .column.sideL {
         width: 15%;
         text-align: right;
+        margin:0;
     }
 
 
@@ -224,4 +225,7 @@ ul.Recenzije {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
+
+/*Drugi dio menia*/
 
