@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Lokacije</title>
+    <title>Rezervacije</title>
 </head>
 <body>
     <div class="header" id="rcorners2">
         <div class="row">
             <div class="column sideR">
-                <img src="../MEDIA/logo.png" style="width:50px;height:50px">
+                <img src="../MEDIA/logo.png" style="width:80px;height:80px">
 
             </div>
 
@@ -25,7 +25,7 @@
             <div class="column sideL">
 
 
-                <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu(); ">
+                <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu(); ">
 
 
                     <div class="bar1"></div>
@@ -54,19 +54,19 @@
         <a href="AboutUs.html" class="w3-bar-item w3-button">O nama</a>
     </div>
 
-    <div class="Form" >
+    <div id="myForm" class="Form" >
         <form onsubmit="return false">
             <label for="ime">Ime</label>
-            <input type="text" id="ime" name="ime" placeholder="Vaše Ime...">
+            <input required type="text" id="ime" name="ime" placeholder="Vaše Ime...">
 
             <label for="prezime">Prezime</label>
-            <input type="text" id="prezime" name="prezime" placeholder="Vaše Prezime...">
+            <input required type="text" id="prezime" name="prezime" placeholder="Vaše Prezime...">
 
             <label for="mobitel">Broj Mobitela</label>
-            <input type="tel" id="mobitel" name="mobitel" placeholder="+385 091-123-4567">
+            <input required type="tel" id="mobitel" name="mobitel" placeholder="+385 091-123-4567">
 
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="ivan.horvat@gmail.com">
+            <input required type="email" id="email" name="email" placeholder="ivan.horvat@gmail.com">
 
             <label for="država">Država</label>
             <select id="država" name="država" onchange="yesnoCheck(this);">
@@ -74,7 +74,7 @@
                 <option value="grčka">Grčka</option>
                 <option value="srbija">Srbija</option>
             </select>
-            <!--Masan JavaScript za ovo (Lokacije btw)-->
+            <!--Lokacije btw-->
             <label for="hrv">Lokacije</label>
             <select id="hrv">
                 <option value="brač">Brač</option>
@@ -89,21 +89,21 @@
             </select>
 
             <select style="display:none;" id="srb">
-                <option value="derdap">Derdap</option>
+                <option value="derdap">Đerdap</option>
                 <option value="rijekauvač">Rijeka Uvač</option>
-                <option value="topciderpark">Topcider Park</option>
+                <option value="topciderpark">Topčider Park</option>
             </select>
             <!--Filler stvari-->
             <label for="pansion">Pansion</label>
             <select id="pansion">
-                <option value="derdap">Puni Pansion</option>
-                <option value="rijekauvač">Polu-Pansion</option>
-                <option value="topciderpark">Bez Pansiona</option>
+                <option value="punipansion">Puni Pansion</option>
+                <option value="polupansion">Polu-Pansion</option>
+                <option value="betpansiona">Bez Pansiona</option>
             </select>
             <br>
-            <div class="popup" onclick="myFunction()">
-                <input type="submit" value="Podnesi">
-                <span class="popuptext" id="myPopup">Vaš zahtjev je podnesen, uskoro ćete dobiti e-mail</span>
+            <div class="popup" onclick="myFunction()" onkeydown="myFunction()" onmousedown="myFunction()">
+                <input id="check" type="submit" value="Podnesi">
+                <span class="popuptext" id="myPopup">Vaš zahtjev je podnesen, uskoro ćete dobiti e-mail!</span>
             </div>
         </form>
     </div>
@@ -126,10 +126,31 @@
                 document.getElementById("hrv").style.display = "none";
             }
         }
+        
+        //Provjera da li je popunjena
         function myFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
+            document.getElementById("check").onclick = function () {
+                let allAreFilled = true;
+                document.getElementById("myForm").querySelectorAll("[required]").forEach(function (i) {
+                    if (!allAreFilled) return;
+                    if (!i.value) allAreFilled = false;
+                    if (i.type === "radio") {
+                        let radioValueCheck = false;
+                        document.getElementById("myForm").querySelectorAll(`[name=${i.name}]`).forEach(function (r) {
+                            if (r.checked) radioValueCheck = true;
+                        })
+                        allAreFilled = radioValueCheck;
+                    }
+                })
+                if (allAreFilled) {
+                    var popup = document.getElementById("myPopup");
+                    popup.classList.toggle("show");
+                    setTimeout(function () {popup.classList.toggle("hide")}, 3000);
+                }
+
+            };
         }
+            
 
         //skripta za menu
         function openRightMenu() {

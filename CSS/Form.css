@@ -80,7 +80,6 @@ input[type=submit] {
 }
 .column {
     float: left;
-    padding: 1%;
 }
 
     /* lijeva column */
@@ -234,9 +233,12 @@ input[type=submit] {
         }
 
     /* Toggle this class - hide and show the popup */
-    .popup .show {
-        visibility: visible;
-    }
+.popup .show {
+    visibility: visible;
+ }
+.popup .hide {
+    visibility: hidden;
+}
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
