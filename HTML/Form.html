@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../CSS/Form.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lokacije</title>
+</head>
+<body>
+    <div class="header" id="rcorners2">
+        <div class="row">
+            <div class="column sideR">
+                <img src="../MEDIA/logo.png" style="width:50px;height:50px">
+
+            </div>
+
+            <div class="column middle">
+                <h1 style="color:white;">Tesla Travels Rezervacija</h1>
+            </div>
+
+            <div class="column sideL">
+
+
+                <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu(); ">
+
+
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+
+                    <!--<i class="fa fa-caret-down"></i>-->
+                </button>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+        <a></br></a>
+        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+        <a href="MainPage.html" class="w3-bar-item w3-button">Tesla Travels </a>
+        <a href="Hrvatska.html" class="w3-bar-item w3-button">Hrvatska</a>
+        <a href="Srbija.html" class="w3-bar-item w3-button">Srbija</a>
+        <a href="Grčka.html" class="w3-bar-item w3-button">Grčka</a>
+        <a href="Form.html" class="w3-bar-item w3-button" style="background-color:skyblue;">Rezerviraj</a>
+        <a href="AboutUs.html" class="w3-bar-item w3-button">O nama</a>
+    </div>
+
+    <div class="Form" >
+        <form onsubmit="return false">
+            <label for="ime">Ime</label>
+            <input type="text" id="ime" name="ime" placeholder="Vaše Ime...">
+
+            <label for="prezime">Prezime</label>
+            <input type="text" id="prezime" name="prezime" placeholder="Vaše Prezime...">
+
+            <label for="mobitel">Broj Mobitela</label>
+            <input type="tel" id="mobitel" name="mobitel" placeholder="+385 091-123-4567">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="ivan.horvat@gmail.com">
+
+            <label for="država">Država</label>
+            <select id="država" name="država" onchange="yesnoCheck(this);">
+                <option value="hrvatska">Hrvatska</option>
+                <option value="grčka">Grčka</option>
+                <option value="srbija">Srbija</option>
+            </select>
+            <!--Masan JavaScript za ovo (Lokacije btw)-->
+            <label for="hrv">Lokacije</label>
+            <select id="hrv">
+                <option value="brač">Brač</option>
+                <option value="dubrovnik">Dubrovnik</option>
+                <option value="plitvice">Plitvice</option>
+            </select>
+
+            <select style="display:none;" id="grč">
+                <option value="akropola">Akropola</option>
+                <option value="santorini">Santorini</option>
+                <option value="meteoragrecia">Meteora Grecia</option>
+            </select>
+
+            <select style="display:none;" id="srb">
+                <option value="derdap">Derdap</option>
+                <option value="rijekauvač">Rijeka Uvač</option>
+                <option value="topciderpark">Topcider Park</option>
+            </select>
+            <!--Filler stvari-->
+            <label for="pansion">Pansion</label>
+            <select id="pansion">
+                <option value="derdap">Puni Pansion</option>
+                <option value="rijekauvač">Polu-Pansion</option>
+                <option value="topciderpark">Bez Pansiona</option>
+            </select>
+            <br>
+            <div class="popup" onclick="myFunction()">
+                <input type="submit" value="Podnesi">
+                <span class="popuptext" id="myPopup">Vaš zahtjev je podnesen, uskoro ćete dobiti e-mail</span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        //skripta za form
+        function yesnoCheck(that) {
+            if (that.value == "hrvatska") {
+                document.getElementById("grč").style.display = "none";
+                document.getElementById("srb").style.display = "none";
+                document.getElementById("hrv").style.display = "block";
+            } else if (that.value == "grčka") {
+                document.getElementById("grč").style.display = "block";
+                document.getElementById("srb").style.display = "none";
+                document.getElementById("hrv").style.display = "none";
+            }
+            else if (that.value == "srbija"){
+                document.getElementById("grč").style.display = "none";
+                document.getElementById("srb").style.display = "block";
+                document.getElementById("hrv").style.display = "none";
+            }
+        }
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+        //skripta za menu
+        function openRightMenu() {
+            document.getElementById("rightMenu").style.display = "block";
+            document.getElementById("rightMenu").style.width = "15%";
+        }
+
+        function closeRightMenu() {
+            document.getElementById("rightMenu").style.display = "none";
+        }
+
+
+        // skripta za ici gore
+
+
+
+        function topFunction() {
+            document.body.scrollTop = 0;  // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+</body>
+</html>
