@@ -15,7 +15,7 @@
     <div class="header" id="rcorners2">
         <div class="row">
             <div class="column sideR">
-                <img src="../MEDIA/logo.png" style="width:50px;height:50px">
+                <img src="../MEDIA/logo.png" style="width:80px;height:80px">
 
             </div>
 
@@ -26,7 +26,7 @@
             <div class="column sideL">
 
 
-                <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu(); ">
+                <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu(); ">
 
 
                     <div class="bar1"></div>
@@ -52,34 +52,37 @@
         <a href="Hrvatska.html" class="w3-bar-item w3-button">Hrvatska</a>
         <a href="Srbija.html" class="w3-bar-item w3-button">Srbija</a>
         <a href="Grčka.html" class="w3-bar-item w3-button" style="background-color:skyblue;">Grčka</a>
-        <a href="AboutUs.html" class="w3-bar-item w3-button" >O nama</a>
+        <a href="Form.html" class="w3-bar-item w3-button">Rezerviraj</a>
+        <a href="AboutUs.html" class="w3-bar-item w3-button">O nama</a>
     </div>
-   
+
 
     <!--Div koji obuhvaca slike i tekst na sredini -->
     <div class="Main">
         <!--Div za 1. sliku i tekst na lijevoj strani -->
         <div class="leftimg">
-            <h2>Placeholder</h2>
+            <h2 style="font-family:'Times New Roman'">Akropola</h2>
             <img src="../MEDIA/Grcka/akropola.jpg" style="width:50%;height:30%;">
-            <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
+            <p style="font-family:Arial" class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
         </div>
         <br><br><br>
         <!--Div za sliku i tekst na desnoj strani  -->
         <div class="rightimg">
-            <h2>Placeholder</h2>
+            <h2 style="font-family:'Times New Roman'">Meteora Gercia</h2>
             <img src="../MEDIA/Grcka/Meteora-Grecia.jpg" style="width: 50%; height: 30%;">
-            <p class="right">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
+            <p style="font-family:Arial" class="right">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
         </div>
         <br><br><br>
         <!--Div za 2. sliku i tekst na lijevoj strani -->
         <div class="leftimg">
-            <h2>Placeholder</h2>
+            <h2 style="font-family:'Times New Roman'">Santorini</h2>
             <img src="../MEDIA/Grcka/santorini.jpg" style="width: 50%; height: 30%;">
-            <p class="left">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
+            <p style="font-family:Arial" class="left">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
         </div>
     </div>
     <br>
+    <button class="rezervacija" onclick="goForm()"><strong>Rezerviraj!</strong></button>
+    <br><br>
     <!--Dio za podnozje-->
     <div class="Footer">
         <h3 style="text-align:center;">Recenzije</h3>
@@ -95,18 +98,21 @@
     <footer class="w3-center w3-black w3-padding-64">
         <button class="w3-button w3-light-grey" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-arrow-up w3-margin-right"></i>Na vrh </button>
         <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <a href="Ooops.html"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="Ooops.html"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="Ooops.html"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+            <a href="Ooops.html"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="Ooops.html"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="Ooops.html"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
         </div>
-        <p>Powered by <a href="https://www.tesla.com/en_eu" title="TeslaTech" target="_blank" class="w3-hover-text-green">TeslaTech.com</a></p>
+        <p>Powered by <a href="Ooops.html" title="TeslaTech" class="w3-hover-text-green">TeslaTech.com</a></p>
     </footer>
 
     <script>
-
+        //script link
+        function goForm() {
+            window.location.href = "Form.html";
+        }
 
         //skripta za menu
         function openRightMenu() {
