@@ -3,9 +3,7 @@
 * {
     box-sizing: border-box;
 }
-h3:link {
-    text-decoration: none;
-}
+
 /*kao neki header nemoj me ubi leo*/
 .header {
     position: fixed;
