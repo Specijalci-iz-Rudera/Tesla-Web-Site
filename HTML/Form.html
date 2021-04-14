@@ -14,7 +14,7 @@
     <div class="header" id="rcorners2">
         <div class="row">
             <div class="column sideR">
-                <img src="../MEDIA/logo.png" style="width:80px;height:80px">
+                <a href="MainPage.html"><img src="../MEDIA/logo.png" style="width:80px;height:80px"></a>
 
             </div>
 
@@ -50,11 +50,11 @@
         <a href="Hrvatska.html" class="w3-bar-item w3-button">Hrvatska</a>
         <a href="Srbija.html" class="w3-bar-item w3-button">Srbija</a>
         <a href="Grčka.html" class="w3-bar-item w3-button">Grčka</a>
-        <a href="Form.html" class="w3-bar-item w3-button" style="background-color:skyblue;">Rezerviraj</a>
+        <a href="Form.html" class="w3-bar-item w3-button" style="color: white; background-color: #404040 ;">Rezerviraj</a>
         <a href="AboutUs.html" class="w3-bar-item w3-button">O nama</a>
     </div>
 
-    <div id="myForm" class="Form" >
+    <div id="myForm" class="Form">
         <form onsubmit="return false">
             <label for="ime">Ime</label>
             <input required type="text" id="ime" name="ime" placeholder="Vaše Ime...">
@@ -107,6 +107,9 @@
             </div>
         </form>
     </div>
+    
+
+ 
 
     <script>
         //skripta za form
@@ -120,13 +123,13 @@
                 document.getElementById("srb").style.display = "none";
                 document.getElementById("hrv").style.display = "none";
             }
-            else if (that.value == "srbija"){
+            else if (that.value == "srbija") {
                 document.getElementById("grč").style.display = "none";
                 document.getElementById("srb").style.display = "block";
                 document.getElementById("hrv").style.display = "none";
             }
         }
-        
+
         //Provjera da li je popunjena
         function myFunction() {
             document.getElementById("check").onclick = function () {
@@ -145,12 +148,12 @@
                 if (allAreFilled) {
                     var popup = document.getElementById("myPopup");
                     popup.classList.toggle("show");
-                    setTimeout(function () {popup.classList.toggle("hide")}, 3000);
+                    setTimeout(function () { popup.classList.toggle("hide") }, 3000);
                 }
 
             };
         }
-            
+
 
         //skripta za menu
         function openRightMenu() {

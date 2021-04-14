@@ -1,5 +1,5 @@
 # Tesla-Web-Site
-Stranica za SJIWP
+Projektna stranica za predmet SJIWP Tehnička škola Ruđera Boškovića.
 
 Authors: Fran Cvok, San Ćaleta, Dominik Fabijančić, Jakov Lovaković, Leo Marušić, Marko Vladetić
 
