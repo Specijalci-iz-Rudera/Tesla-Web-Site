@@ -22,6 +22,7 @@ body {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 3px 5px gray;
+    font-size:medium;
 }
 
 input[type=text], select {
@@ -61,13 +62,13 @@ input[type=email], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #404040 ;
+    background-color: darkblue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    box-shadow: 3px 5px #888888;
+    box-shadow: 3px 5px #000000;
 }
 
     input[type=submit]:hover {
