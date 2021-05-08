@@ -24,7 +24,7 @@ html {
     width: 33.3%;
     margin-bottom: 16px;
     padding: 0 8px;
-    cursor: help;   
+    cursor: pointer;   
 }
 
 .card {
@@ -118,13 +118,13 @@ html {
     clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other 
 @media screen and (max-width: 600px) {
     .column1.side, .column1.middle {
         width: 100%;
     }
 }
-
+*/
 /*Meni*/
 
 .dropbtn {
