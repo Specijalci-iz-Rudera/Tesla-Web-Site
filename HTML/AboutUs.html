@@ -2,7 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" href="../CSS/AboutUs.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,16 +13,16 @@
 <body>
     <div class="header" id="rcorners2">
         <div class="row">
-            <div class="column1 sideR">
+            <div class="column sideR">
                 <a href="index.html"><img src="../MEDIA/logo.png" style="width:80px;height:80px"></a>
 
             </div>
 
-            <div class="column1 middle">
+            <div class="column middle">
                 <h1></h1>
             </div>
 
-            <div class="column1 sideL">
+            <div class="column sideL">
 
 
                 <button class="w3-button w3-xlarge w3-right" onclick="openRightMenu(); ">
@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;z-index:10;" id="rightMenu">
         <a><br></a>
         <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
 

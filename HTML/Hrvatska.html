@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="../CSS/Hrvatska.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hrvatska</title>
 </head>
-
-<body>
-    <div class="header" id="rcorners2" >
+<body style="background-image: url(../MEDIA/Hrvatska/onoveliko.jpg);">
+    <div class="header" id="rcorners2" style="background-color: rgba(166, 207, 213, 0.8);">
         <div class="row">
             <div class="column sideR">
-                <a href="index.html"><img src="../MEDIA/logo.png" style="width:80px;height:80px"></a>
+                <a href="index.html"><img src="../MEDIA/logo.png" class="logo"></a>
 
             </div>
 
@@ -44,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background-color:white;" id="rightMenu">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display: none;right: 0;background-color: white;z-index: 10;" id="rightMenu">
         <a><br></a>
         <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
         <a href="index.html" class="w3-bar-item w3-button">Tesla Travels </a>
@@ -61,22 +60,28 @@
         <!--Div za 1. sliku i tekst na lijevoj strani -->
         <div class="leftimg">
             <h2 style="font-family:'Times New Roman';font-size:30px;">Brač</h2>
-            <img src="../MEDIA/Hrvatska/brac.jpg" style="width:50%;height:30%;">
-            <p style="font-family:Arial;" class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
+            <div class="Sadrzaj">
+            <img src="../MEDIA/Hrvatska/brac.jpg" style="width:100%;height:100%;">
+            <p style="font-family:Arial;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
+            </div>
         </div>
         <br><br><br>
         <!--Div za sliku i tekst na desnoj strani  -->
         <div class="rightimg">
-            <h2 style="        font-family: 'Times New Roman';font-size: 30px;">Dubrovnik</h2>
-            <img src="../MEDIA/Hrvatska/Dubrovnik.jpg" style="width: 50%; height: 30%;">
-            <p style="font-family:Arial;" class="right">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
+            <h2 style=" font-family: 'Times New Roman';font-size: 30px;">Dubrovnik</h2>
+            <div class="Sadrzaj">
+            <p style="font-family:Arial;">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
+            <img src="../MEDIA/Hrvatska/Dubrovnik.jpg" style="width: 100%; height: 100%;">
+            </div>
         </div>
         <br><br><br>
         <!--Div za 2. sliku i tekst na lijevoj strani -->
         <div class="leftimg">
             <h2 style="font-family:'Times New Roman';font-size:30px;">Plitvice</h2>
-            <img src="../MEDIA/Hrvatska/plitvice.jpeg" style="width: 50%; height: 30%;">
-            <p style="font-family:Arial;" class="left">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
+            <div class="Sadrzaj">
+            <img src="../MEDIA/Hrvatska/plitvice.jpeg" style="width: 100%; height: 100%;">
+            <p style="font-family:Arial;">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
+            </div>
         </div>
     </div>
     <br>
@@ -87,11 +92,11 @@
         <h3 style="text-align:center;color:white;">Recenzije</h3>
         <hr>
         <!--Reviews-->
-        <ul class="Recenzije">
-            <li><p><strong>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit varius nibh, ut sagittis tortor mollis quis. Mauris molestie urna urna, et euismod risus ultricies at. Nullam placerat augue laoreet nisi varius convallis. Morbi neque ipsum, luctus a enim et, lobortis efficitur neque."</strong>-neko</p></li>
-            <li><p><strong>"Quisque egestas imperdiet dui, vel porta purus interdum ac. Vestibulum semper, sapien vel rutrum viverra, arcu nibh congue lacus, id blandit risus sapien ut augue."</strong>-da</p></li>
-            <li><p><strong>"Donec quam quam, venenatis sit amet nibh at, tincidunt placerat lorem. Etiam id tellus id eros malesuada tempor. Nulla in finibus orci. Etiam tristique sit amet dolor sed vulputate. Duis semper pulvinar tellus, a venenatis felis auctor ut."</strong>-ne</p></li>
-        </ul>
+        <div class="Recenzije">
+            <div><strong>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit varius nibh, ut sagittis tortor mollis quis. Mauris molestie urna urna, et euismod risus ultricies at. Nullam placerat augue laoreet nisi varius convallis. Morbi neque ipsum, luctus a enim et, lobortis efficitur neque."</strong><br>-neko</div>
+            <div><strong>"Quisque egestas imperdiet dui, vel porta purus interdum ac. Vestibulum semper, sapien vel rutrum viverra, arcu nibh congue lacus, id blandit risus sapien ut augue."</strong><br>-da</div>
+            <div><strong>"Donec quam quam, venenatis sit amet nibh at, tincidunt placerat lorem. Etiam id tellus id eros malesuada tempor. Nulla in finibus orci. Etiam tristique sit amet dolor sed vulputate. Duis semper pulvinar tellus, a venenatis felis auctor ut."</strong><br>-ne</div>
+        </div>
     </div>
 
     <!--Crni Footer-->
