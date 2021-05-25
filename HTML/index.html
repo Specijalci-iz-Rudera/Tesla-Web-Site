@@ -43,8 +43,8 @@
             </div>
         </div>
     </div>
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background-color:white;z-index:10;" id="rightMenu">
-        <a></br></a>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;background-color:white;z-index:10;" id="rightMenu" >
+        <a><br></a>
         <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
         <a href="index.html" class="w3-bar-item w3-button" style=" color:white; background-color: #404040;">Tesla Travels </a>
         <a href="Hrvatska.html" class="w3-bar-item w3-button">Hrvatska</a>
@@ -60,7 +60,13 @@
         //skripta za menu
         function openRightMenu() {
             document.getElementById("rightMenu").style.display = "block";
-            document.getElementById("rightMenu").style.width = "15%";
+            if (window.innerWidth > 640) {
+                document.getElementById("rightMenu").style.width = "15%";
+            }
+            else {
+                document.getElementById("rightMenu").style.width = "40%";
+            }
+            
         }
 
         function closeRightMenu() {

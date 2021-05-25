@@ -163,7 +163,12 @@
         //skripta za menu
         function openRightMenu() {
             document.getElementById("rightMenu").style.display = "block";
-            document.getElementById("rightMenu").style.width = "15%";
+            if (viewportWidth > 640) {
+                document.getElementById("rightMenu").style.width = "15%";
+            } else {
+                document.getElementById("rightMenu").style.width = "30%";
+            }
+
         }
 
         function closeRightMenu() {

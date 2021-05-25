@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /*CSS za glavni sadrzaj(slike i tekst)*/
 .Main {
     position: relative;
@@ -214,6 +215,8 @@ body {
 
 /*Meni*/
 
+
+
 .dropbtn {
     color: white;
     padding: 16px;
@@ -287,12 +290,6 @@ body {
 }
 
 /*Za Ooops stranicu*/
-* {
-    box-sizing: border-box;
-}
-
-body {
-}
 
 .image {
     text-align: center;
@@ -526,6 +523,10 @@ input[type=submit] {
     position: relative;
 }
 /*Za Homepage*/
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, bgimg-5 {
     background-attachment: fixed;
@@ -574,13 +575,4 @@ input[type=submit] {
     background: red; /* Fallback color */
     background: rgba(0, 0, 0,0.7); /* Black background with 0.5 opacity */
     color: #f1f1f1;
-}
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato", sans-serif;
-}
-
-body, html {
-    height: 100%;
-    color: black;
-    line-height: 1.8;
 }

@@ -63,7 +63,7 @@
             <h2 style="font-family:'Times New Roman';font-size:30px;">Akropola</h2>
             <div class="Sadrzaj">
             <img src="../MEDIA/Grcka/akropola.jpg" style="width:100%;height:100%;">
-            <p style="font-family:Arial;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
+            <p style="font-family:Arial;">Zahvaljujući svome položaju i obliku prirodne tvrđave, bila je nastanjena od sredina 13. stoljeća prije Krista. Akropola, „gornji grad“, jedan je od nekoliko atenskih brežuljaka koji po svojem povijesnom značaju i spomenicima znatno nadmašuje ostale. To je stjenovit brežuljak nadmorske visine 164 metra, čija je zaravan veličine 318 x 127 metara. Duguljasta je oblika, širokom svojom stranom okrenuta jugu i morskoj obali. Okomita strmina njegovij stijena čini ga nepristupačnim osim s uske zapadne strane, a na vrhu mu se prostire širok zaravnak. Od svih kamenih brežuljaka u atičkoj kotlini ovaj je najprikladniji da posluži kao tvrađava jer nije previsok, silno je strm, a na vrhu ima dosta ravnog prostora prikladnog za gradnju. Dominira čitavim primorskim dijelom kotline, a od mora je dosta daleko da bude siguran od gusarskih prepada. Na Akropoli su otkriveni spomenici mikenskog razdoblja: megalitske zidine, tragovi kraljevske palače i grobova. Utvrđene zidine iz 13. stoljeća prije Krista bile su pelazgičke, nazvane su tako po stanovnicima, Pelazgima.“ </p>
             </div>
         </div>
         <br><br><br>
@@ -72,7 +72,11 @@
             <h2 style="font-family:'Times New Roman';font-size:30px;">Meteora Gercia</h2>
             <div class="Sadrzaj">
             <img src="../MEDIA/Grcka/Meteora-Grecia.jpg" style="width: 100%; height: 100%;">
-            <p style="font-family:Arial;">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
+            <p style="font-family:Arial;">
+                Danas se do manastira može popeti stepenicama urezanim u stijene i mostovima, no prije 1920. godine, penjanje do njih je bio pravi pothvat. Visoke litice, koje poput stupova strše u nebo, u grčkoj regiji Tesalija, dom su pravoslavnih manastira u kojima se vjerska dužnost obavlja već 1000 godina. Ovi samostani izgrađeni su na gotovo nedostupnih vrhovima prirodnih vapnenačkih stijena, nekih visokih i do 500 metara.
+                Manastiri se nalaze kraj grada Kalambake, na sjeverozapadnom dijelu Tesalske ravnice, u blizini rijeke Penej te na istočnim padinama planinskog masiva Pind u sreišnjoj Grčkoj.
+                Kalambaka ima svega 12 000 stanovnika i bogatom i dugom povijesti. Ostatci grčkog hrama ugrađeni su u najstariju crkvu, koja je izgrađena još u 10. stoljeću. Za vrijeme 2. svjetskog rata njemačka vojska ga je, tijekom okupacije Grčke, zapalila, no nakon završetka rata ponovno je izgrađen.
+            </p>
             </div>
         </div>
         <br><br><br>
@@ -81,7 +85,11 @@
             <h2 style="font-family:'Times New Roman';font-size:30px;">Santorini</h2>
             <div class="Sadrzaj">
             <img src="../MEDIA/Grcka/santorini.jpg" style="width: 100%; height: 100%;">
-            <p style="font-family:Arial;">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
+            <p style="font-family:Arial;">
+                Otok Santorini jedan je od najljepših europskih otoka, a nalazi se u Egejskom moru. 140 km je udaljen od krete i nešto manje od 250 km udaljen od glavnog grada Grčke, Atene.
+                Santorini zauzima površinu od 96 kilometara kvadratnih, ima oko 13 000 stanovnika, a svake ga godine posjeti velik broj turista.
+                Poznat je po plažama, vulkanu, legendi o Atlantidi i arhitekturi. Današnji oblik i izgled je dobio u drugom tisućljeću prije Krista kada je stvorena kaldera, odnosno kada se vulkan uršuio u sebe i oblikovao prekrasan otok prepun klifova s kojih se pruža prekrasan pogled koji oduzima dah. Vjeruje se da je to jedina od naseljenih kaldera na svijetu. Prepoznatljive bijele kuće s plavim krovovima nalaze se u malenom gradu Thira, a i sam je otok poznat pod tim nazivom. Upravno središte otoka je grad Fira, koji se nalazi na zapadnoj strani otoka.“
+            </p>
             </div>
         </div>
     </div>
@@ -122,7 +130,12 @@
         //skripta za menu
         function openRightMenu() {
             document.getElementById("rightMenu").style.display = "block";
-            document.getElementById("rightMenu").style.width = "15%";
+            if (viewportWidth > 640) {
+                document.getElementById("rightMenu").style.width = "15%";
+            } else {
+                document.getElementById("rightMenu").style.width = "30%";
+            }
+
         }
 
         function closeRightMenu() {

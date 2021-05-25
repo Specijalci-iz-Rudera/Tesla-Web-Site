@@ -62,7 +62,7 @@
         <div class="rightimg">
             <h2 style="font-family:'Times New Roman';font-size:30px;">Đerdap</h2>
             <div class="Sadrzaj">
-            <p style="font-family:Arial;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
+                <p style="font-family:Arial;">Nalazi se u sjeveroistočnom dijelu Srbije, na samoj granici s Rumunjskom. Park se prostire na povrišini od 636,8 kilometara kvadratnih. Osnovni prirodni fenomen ovog područja je 100 km duga Đerdapska klisura, najduži i najveći klanac u Europi kroz koju protječe rijeka Dunav. Zahvaljujući zaštićenom položaju, tzv. „Gvozdena vrata“ štite više od 60 šumskih zajednica i šikara od kojih su mnoge relikti tercijarnih šumskih zajednica. Park se prostire na oko 100 km desne obale Dunava, od Golupca do Karataša kod Kladova, i obuhvaća uski šumoviti brdsko-planinski pojas uz Dunav, širine 2-8 km, koji se izdiže iznad Dunava od 50-800 metara nadmorske visine. Ovo područje je proglašeno nacionalnim parkom 1974. godine.</p>
             <img src="../MEDIA/Srbija/Derdap.JPG" style="width:100%;height:100%;">
             </div>       
         </div>
@@ -72,7 +72,7 @@
             <h2 style="font-family:'Times New Roman';font-size:30px;">Rijeka Uvač</h2>
             <div class="Sadrzaj">
             <img src="../MEDIA/Srbija/rijeka-Uvac.jpg" style="width: 100%; height: 100%;">
-            <p style="font-family:Arial;">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
+            <p style="font-family:Arial;">Uvač je snažna zlatiborska rijeka dubokog korita i prelijepih kanjona. On predstavlja južnu granicu Zlatibora. Uvac je glavna pritoka rijeke Lim. Nekoliko zadnjih kilometara, rijeka Uvac predstavlja granicu između BiH i Srbije. Dio pruge Beograd – Bar prolazi rijekom Uvac, taj dio je inače sporan i pripada BiH. Na samom Uvcu se nalaze i sela Štrpci, naselje Uvac u blizini graničnog prijelaza Uvac. Na rijeci Uvac su također izgrađene HE Kokin Brod, HE Uvac i tri umjetna jezera: Sjeničko, Zlatorsko i Radoinjsko. Voda iza Radoinjskog jezera provodi se tunelom dužine 8 km, i kroz dvije cijevi dužine 1 234 m, s padom od 377 m, dovodi do turbina HE Bistrica, a zatim otječe u Lim. To je promijenilo prirodni tok rijeke Uvač</p>
             </div>
         </div>
         <br><br><br>
@@ -80,7 +80,7 @@
         <div class="rightimg">
             <h2 style="font-family:'Times New Roman';font-size:30px;">Topčider Park</h2>
             <div class="Sadrzaj">
-            <p style="font-family:Arial;">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
+                <p style="font-family:Arial;">Iako nije odvojen nikakvim ogradama ni zidinama od grada, ulaskom u park osjećate se kao da ste ušli u potpuno drugi svijet. Oazu mira i zelenila u kojo vlaada tišina i najglasnije su vaše misli. Park se nalazi između općine „Savski venac“ i Čukarica, ali nerijetko ga posjećuju ljudi iz čitavog Beograda. Smješten u dolini Topčiderske rijeke, ovaj park je proglašen za kulturno dobro od izuzetnog značaja za Srbiju. Po čitavom parku se nalaze staze za šetnju, cvjetne aleje i travnjaci. Put će vas ubrzo dovesti do drvenog mostića sa kamenim bedemom iznad jezera, koje je sve popularnije među mladenicima.“ </p>
             <img src="../MEDIA/Srbija/topcider-park.jpg" style="width: 100%; height: 100%;">
             </div>
         </div>
@@ -122,7 +122,12 @@
         //skripta za menu
         function openRightMenu() {
             document.getElementById("rightMenu").style.display = "block";
-            document.getElementById("rightMenu").style.width = "15%";
+            if (viewportWidth > 640) {
+                document.getElementById("rightMenu").style.width = "15%";
+            } else {
+                document.getElementById("rightMenu").style.width = "30%";
+            }
+
         }
 
         function closeRightMenu() {

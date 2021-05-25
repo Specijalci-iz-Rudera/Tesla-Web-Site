@@ -62,7 +62,11 @@
             <h2 style="font-family:'Times New Roman';font-size:30px;">Brač</h2>
             <div class="Sadrzaj">
             <img src="../MEDIA/Hrvatska/brac.jpg" style="width:100%;height:100%;">
-            <p style="font-family:Arial;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut risus mauris. Donec mattis augue sed turpis ultricies consequat.  In hac habitasse platea dictumst. Curabitur augue quam, vestibulum et justo sed, vestibulum rutrum sapien. Cras viverra justo id justo maximus, eget tincidunt felis ultrices. Suspendisse quis dictum dui. </p>
+            <p style="font-family:Arial;">
+                Zlatni rat, plaža na Braču, je jedna od najljepših plaža na svijetu. Ovu 530 metara dugačku plažu, smještena na otoku Braču, nazivaju rajem na zemlji. Njen bijeli pijesak, i tirkizno čisto plavo ime, podsjeća na egzotične plaže nekog Karipskog otoka.s
+                Brač je isto tako sjajno mjesto za provesti odmor sa svojom obitelji, jer nudi različiti bronj aktivnosti za sve dobi, a posebno će biti zanimljiv djeci jer im je na raspolaganju niz vodenih sportova kao što su jetskies, vožnja bananama, trampolini i jedrenje.
+                Dva najpoznatija mjesta na Braču su Supetar i Bol, na kojem se nekada igrao čuveni teniski turnir.
+            </p>
             </div>
         </div>
         <br><br><br>
@@ -70,7 +74,10 @@
         <div class="rightimg">
             <h2 style=" font-family: 'Times New Roman';font-size: 30px;">Dubrovnik</h2>
             <div class="Sadrzaj">
-            <p style="font-family:Arial;">Curabitur eget erat et ipsum dignissim tempor malesuada eu velit. Pellentesque eu nulla nec libero tincidunt semper sed efficitur risus. Vestibulum laoreet ultricies massa, id tempor velit volutpat eu. Proin non egestas nisi, eu aliquam nulla. Vestibulum sodales velit ipsum, quis consequat ex lobortis at. Sed quis commodo lorem, a ultrices libero. </p>
+                <p style="font-family:Arial;">
+                    U 19. stoljeću je George Bernard Shaw izjavio: „Tko traži raj na zemlji, trebao bi posjetiti Dubrovnik.“.
+                    U modernim vremenima poznat je po lokacijama na kojima su se snimali veliki broj popularnih filmova i serija kao što su Igra prijestolja, Ratovi zvijezda, Robin Hood... Dubrovnik je jedan od najpopularnijih destinacija na čitavom Jadranu, koje privlači stotine tisuća turista svake godine. U centru grada dominira Stradun, najpoznatija i najljepša dubrovačka ulica. Dugačka je 300 metara i popločana je mramorom, Stradun povezuje istočna i zapadna gradska vrata, a sa obje strane mogu se vidjeti značajni povijesni objekti, muzeji, trgovi, itd. Također posjetitelji u Dubrovniku se mogu prošetati po gradskim zidinama, jednim od najboljim očuvanim povijesnim spomenicima Europe, koji se također nalaze na UNESCO-voj kulturnoj baštini.
+                </p>
             <img src="../MEDIA/Hrvatska/Dubrovnik.jpg" style="width: 100%; height: 100%;">
             </div>
         </div>
@@ -80,7 +87,10 @@
             <h2 style="font-family:'Times New Roman';font-size:30px;">Plitvice</h2>
             <div class="Sadrzaj">
             <img src="../MEDIA/Hrvatska/plitvice.jpeg" style="width: 100%; height: 100%;">
-            <p style="font-family:Arial;">Aenean semper id lacus vel vulputate. Aliquam congue consectetur rhoncus. Sed cursus, massa vitae efficitur viverra, risus risus laoreet sem, ullamcorper interdum elit nisi et lacus. Sed ornare est ex, et tempus tortor varius non. Ut sed velit eu nibh finibus iaculis non id arcu. Maecenas eleifend urna ante, quis semper mi suscipit mollis. </p>
+            <p style="font-family:Arial;">
+                Ukoliko Vas zanima što posjetiti u Hrvatskoj ili ukoliko tražite neku lokaciju za Vaš idealan odmor u nastavku teksta vam donosimo neke od najzanimljivij lokacije koje valja posjetiti u Hrvatskoj.
+                Nacionalni park „Plitvička jezera“ je jedan od najpoznatijih, ako ne i najpoznatiji hrvatski nacionalni park. Sa svoji 16 smaragdno-zelenim jezerima, Plitvička jezera nisu samo jedan od bisera Hrvatske, već čitave regije. Ovo je prvi nacionalni park u Hrvatskoj, otvoren još 8. travnja 1949. godine. Danas su dio UNESCO-ve kulturne baštine, naseljene raznim životinjama, te više od 160 vrsta ptica. Najbolje vrijeme za posjetu parka je u proljeće, kada sve procvjeta, a privlačno je i u zimi, kada se jezera i slapovi zalede, te kada snježni pokrivač prekrije jezera.
+            </p>
             </div>
         </div>
     </div>
@@ -125,7 +135,12 @@
         //skripta za menu
         function openRightMenu() {
             document.getElementById("rightMenu").style.display = "block";
-            document.getElementById("rightMenu").style.width = "15%";
+            if (viewportWidth > 640) {
+                document.getElementById("rightMenu").style.width = "15%";
+            } else {
+                document.getElementById("rightMenu").style.width = "30%";
+            }
+
         }
 
         function closeRightMenu() {
